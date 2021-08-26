@@ -1,17 +1,20 @@
 # Anton Yashin
 *Junior Fullstack Developer*
 
-## Contact information:##
+## Contact information:
 *Phone:* +7 (926) 098-76-66
+
 *E-mail:* antoshkoo@gmail.com
+
 *Telegram:* @antoshkooo
+
 [LinkedIn](https://www.linkedin.com/in/anton-yashin-80a582119/)
 
 ## Briefly About Myself:
 Some text about me
 
 ## Skills and Proficiency:
-###Fronend
+### Fronend
 * HTML5
 * CSS3
 * JavaScript Basic
