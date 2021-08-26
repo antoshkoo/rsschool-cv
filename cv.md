@@ -1,4 +1,4 @@
-#Anton Yashin#
+#Anton Yashin
 *Junior Fullstack Developer*
 
 ##Contact information:##
@@ -7,16 +7,16 @@
 *Telegram:* @antoshkooo
 [LinkedIn](https://www.linkedin.com/in/anton-yashin-80a582119/)
 
-##Briefly About Myself:##
+##Briefly About Myself:
 Some text about me
 
-##Skills and Proficiency:##
-###Fronend###
+##Skills and Proficiency:
+###Fronend
 * HTML5
 * CSS3
 * JavaScript Basic
 
-###Backend###
+###Backend
 * Python
 * Django
 * Django REST framework
@@ -26,13 +26,13 @@ Some text about me
 * Selenium
 * Beautiful Soup
 
-###Other###
+###Other
 * Jira
 * Git, GitHub
 * Pycharm, VS Code
 * Adobe Photoshop, Illustrator
 
-##Code example:##
+##Code example:
 [Sort the odd](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/python) KATA from CODEWARS: You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
 
 ```python
@@ -44,7 +44,7 @@ def sort_array(source_array):
     return odd
 ```
 
-##Courses:##
+##Courses:
 * Skillbox Python + Django (completed)
 * RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
 * Rebrains Linux Basic (in progress)
