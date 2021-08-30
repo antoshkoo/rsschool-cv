@@ -35,7 +35,12 @@ header::after {
 }
 footer {
     background-color: #e1c340;
-    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer div {
+    padding: 20px 40px;
 }
 aside {
     width: 400px;
