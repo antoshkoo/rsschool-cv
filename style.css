@@ -39,12 +39,19 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 20px 0;
 }
 footer h2 {
     padding: 0 0 20px;
 }
 footer div {
-    padding: 20px 40px 0;
+    padding: 0 40px 0;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
 }
 aside {
     width: 400px;
@@ -103,4 +110,8 @@ span {
 }
 h4 {
     margin: 24px 0 0;
+}
+.code_example {
+    background-color: #F6F7FF;
+    margin-bottom: 20px;
 }
