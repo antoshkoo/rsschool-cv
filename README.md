@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://antoshkoo.github.io/rsschool-cv/index.html
