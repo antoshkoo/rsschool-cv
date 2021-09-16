@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
     <title>Fullstack developer Yashin Anton - CV</title>
   </head>
   <body>
@@ -133,8 +137,16 @@
             original positions.</em
           >
         </p>
-        <div class="code_example">
-          <!-- <img src="assets/img/code-example.jpg" alt="Python code example" /> -->
+        <div>
+          <pre>
+<code class="language-python">def sort_array(source_array):
+    even = [x for x in source_array if x % 2 == 0]
+    odd = sorted([x for x in source_array if x % 2 != 0])
+    for i in even:
+        odd.insert(source_array.index(i), i)
+    return odd
+</code>
+          </pre>
         </div>
       </article>
     </main>
@@ -189,5 +201,9 @@
       </div>
     </footer>
     <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
