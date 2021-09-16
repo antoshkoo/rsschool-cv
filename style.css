@@ -7,16 +7,18 @@ body {
 main,
 footer {
   max-width: 1280px;
+  min-width: 320px;
   margin: 0 auto;
 }
 .wrapper {
-  background-color: #f8f9f0;
+  background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
 }
 .head {
   width: 100%;
+  min-width: 320px;
   background-color: #e1c340;
   height: 10rem;
 }
@@ -55,8 +57,10 @@ footer ul {
   line-height: 24px;
 }
 aside {
-  width: 400px;
   text-align: center;
+  background: #f8f9f0;
+  width: 40%;
+  min-width: 320px;
 }
 figure {
   margin: 0;
@@ -80,7 +84,7 @@ h3 {
   letter-spacing: 0.3rem;
 }
 .skills {
-  padding: 50px 0 0;
+  padding: 0 0 50px;
 }
 .no-type {
   list-style-type: none;
@@ -90,21 +94,9 @@ h3 {
 p {
   margin: 0 0 20px;
 }
-aside {
-  width: 40%;
-  min-width: 320px;
-}
 article {
   width: 40%;
   padding: 10px 40px;
-}
-@media screen and (max-width: 670px) {
-  aside {
-    width: 100%;
-  }
-  article {
-    width: 100%;
-  }
 }
 article h2 {
   text-transform: uppercase;
@@ -127,4 +119,56 @@ h4 {
 .code_example {
   background-color: #f6f7ff;
   margin-bottom: 20px;
+}
+.toggler {
+  display: none;
+  position: absolute;
+  margin: 5px;
+}
+.toggler-menu {
+  left: 0;
+  display: none;
+  background: #fff;
+  position: fixed;
+  z-index: 7;
+  margin: -5px 0;
+}
+.toggler-menu ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  line-height: 30px;
+}
+.toggler-menu ul li {
+  margin: 0;
+}
+.show {
+  display: block;
+  width: 100%;
+}
+.burger {
+  padding: 10px 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM4NHB0IiB2aWV3Qm94PSIwIC01MyAzODQgMzg0IiB3aWR0aD0iMzg0cHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTM2OCAxNTQuNjY3OTY5aC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiLz48cGF0aCBkPSJtMzY4IDMyaC0zNTJjLTguODMyMDMxIDAtMTYtNy4xNjc5NjktMTYtMTZzNy4xNjc5NjktMTYgMTYtMTZoMzUyYzguODMyMDMxIDAgMTYgNy4xNjc5NjkgMTYgMTZzLTcuMTY3OTY5IDE2LTE2IDE2em0wIDAiLz48cGF0aCBkPSJtMzY4IDI3Ny4zMzIwMzFoLTM1MmMtOC44MzIwMzEgMC0xNi03LjE2Nzk2OS0xNi0xNnM3LjE2Nzk2OS0xNiAxNi0xNmgzNTJjOC44MzIwMzEgMCAxNiA3LjE2Nzk2OSAxNiAxNnMtNy4xNjc5NjkgMTYtMTYgMTZ6bTAgMCIvPjwvc3ZnPg==);
+  background-size: 20px 20px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  border-radius: 100%;
+  position: fixed;
+  right: 5px;
+  z-index: 10;
+}
+@media screen and (max-width: 670px) {
+  aside {
+    width: 100%;
+    border-bottom: 3px dashed black;
+  }
+  article {
+    width: 100%;
+  }
+  .toggler {
+    display: inline;
+  }
 }

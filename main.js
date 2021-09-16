@@ -9,3 +9,14 @@ toggleMenuLinks.forEach((button) => {
     togglerMenu.classList.toggle("show", false);
   });
 });
+
+for (let link of toggleMenuLinks) {
+  link.addEventListener("click", (elem) => {
+    elem.preventDefault();
+    const toSection = link.getAttribute("href");
+    document.querySelector(toSection).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
