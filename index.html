@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
-    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/default.min.css" />
     <title>Fullstack developer Yashin Anton - CV</title>
   </head>
   <body>
@@ -79,28 +76,57 @@
       <article>
         <a id="projects"></a>
         <h2>Completed projects</h2>
-        <h3>Parser for zakupki.gov.ru</h3>
-        <p>
-          <a href="https://github.com/antoshkoo/scraper-zakupki" target="_blank"
-            >Project on Github</a
-          ><br />
-          <span>Django, BS4, Selenium, Redis, Celery, Docker</span>
-        </p>
+        <section class="project">
+          <h3>Parser for zakupki.gov.ru</h3>
+          <a
+            href="https://github.com/antoshkoo/scraper-zakupki"
+            target="_blank"
+          >
+            <img
+              src="assets/img/goszakupki.jpg"
+              alt="Project zakupki.gov.ru"
+              width="200"
+          /></a>
+          <p>
+            <a
+              href="https://github.com/antoshkoo/scraper-zakupki"
+              target="_blank"
+              >Project on Github</a
+            ><br />
+            <span>Django, BS4, Selenium, Redis, Celery, Docker</span>
+          </p>
+          <p>
+            In this project you can set the current INN of organization, after
+            this parser show all they tenders. Also he can watching for selected
+            tenders in realtime and has telegram notifications for users if some
+            tender has changes.
+          </p>
+        </section>
 
-        <h3>Era Vr club site</h3>
-        <p>
-          <a href="https://era-vr.ru/" target="_blank">https://era-vr.ru/</a
-          ><br /><span>Django, DRF, Vue</span>
-        </p>
-
-        <p>
-          In IT since 2004. Worked in SEO, marketing, website development. In
-          several large projects was in the role of Project Manager. For the
-          last few years actively learning Python + Django.
-        </p>
+        <section class="project">
+          <h3>Era Vr club site</h3>
+          <a href="https://era-vr.ru/" target="_blank"
+            ><img
+              src="assets/img/era-vr.jpg"
+              alt="Project era-vr.ru"
+              width="200"
+          /></a>
+          <p>
+            <a href="https://era-vr.ru/" target="_blank">https://era-vr.ru/</a
+            ><br /><span>Django, DRF, Vue</span>
+          </p>
+          <p>
+            Beautiful adaptive project for VR club in Russia/Moscow. This site
+            can answer for users what games they can play in this clubs, price
+            for game, how to make children Happy Birthday and book time for
+            self.
+          </p>
+        </section>
 
         <a id="courses"></a>
         <h2>Training courses</h2>
+        <h3>JavaScript/Front-end</h3>
+        <p>RS School | 2021 - now</p>
         <h3>Python - framework Django (completed)</h3>
         <p>Skillbox | 2021</p>
         <h3>Python developer</h3>
@@ -114,10 +140,13 @@
 
         <h2>About me</h2>
         <p>
-          35 years old. I live in Moscow and sometimes in Sochi. Follow new
-          trends and modern technologies. I will be happy to join the team that
-          is engaged in their development. I go snowboarding, wakeboarding,
-          longboarding.English - A2 (Pre-Intermediate)
+          35 years old. I live in Moscow and sometimes in Sochi. In IT since
+          2004. Worked in SEO, marketing, website development. In several large
+          projects was in the role of Project Manager. For the last few years
+          actively learning Python + Django. Follow new trends and modern
+          technologies. I will be happy to join the team that is engaged in
+          their development. I go snowboarding, wakeboarding, longboarding.
+          English - A2 (Pre-Intermediate)
         </p>
 
         <a id="code"></a>
@@ -192,7 +221,7 @@
         <p>
           <a href="https://rs.school/js/" target="_blank"
             ><img
-              src="https://rs.school/images/rs_school_js.svg"
+              src="assets/img/rs_school_js.svg"
               alt="RS School Logo"
               width="100"
           /></a>
@@ -200,10 +229,29 @@
         <p>&copy; 2021</p>
       </div>
     </footer>
-    <script src="main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
+      console.log(
+        `
++ вёрстка валидная +10
++ вёрстка семантическая +20
++ для оформления СV используются css-стили +10 (больше 10 стилизованных элементов)
++ контент по середине страницы фон тянется +10
++ вёрстка адаптивная +10 (до 320px горизонтальная прокрутка не появляется)
++ бургер-меню есть, плавная прокрутка реализована +10
++ на странице СV присутствует изображение +10
++ контакты для связи и перечень навыков оформлены в виде списка ul > li +10
++ CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10
++ CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода. Для подсветки кода может использоваться js-библиотека, например, highlight.js +10
++ CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10
++ CV выполнено на английском языке +10
++ выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10
+- Есть видеорезюме автора CV на английском языке. Видеорезюме встраивается в страницу CV как видео, а не в виде кнопки или ссылки. Продолжительность видео 3-5 минут (±15 секунд). В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке (например, в документе Google Docs). +10
++ дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10'
+      `
+      );
     </script>
   </body>
 </html>
